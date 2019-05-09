@@ -49,9 +49,9 @@
 	<div class="Project">
 		<h2>Mandelbrot Set</h2> 
 		<h3>June 2018</h3>
-		<h5>I always loved seeing the complexity in simplicity. The mandelbrot set is the application of a simple function across many points
-		that can create deseptively complex results. I originally created this project in c++ using the BGI graphics interface, but that 
-		library turned out to be a slow piece of crap. Recently, I decided to port it into OpenGL using GLFW, and it's a lot faster and more beautiful now.
+		<h5>It's cool to see the complexity in simplicity. The Mandelbrot set is the application of a simple recursive function across many points
+		that can create deceptively complex results. I originally created this project in c++ using the BGI graphics interface, but that 
+		library turned out to be a slow piece of crap. Recently, I decided to port it into OpenGL using GLFW, which made it a lot faster and beautiful.
 		</h5>
 		
 		<h4>Links: </h4>
@@ -62,6 +62,41 @@
 		<!--Seperator-->
 		<div style="position: relative; height:0px; float:left; width:100%;"></div>
 		
-		<img src="Mandelbrot1.png" style="float: left; left:5%; width: 80%;"/>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+			<img src="Mandelbrot3.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+			<img src="Mandelbrot1.png" style="width:100%">
+		  </div>
+
+		  <div class="mySlides fade">
+			<img src="Mandelbrot2.png" style="width:100%">	
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <div class="prev" onclick="plusSlides(-1)"><</div>
+		  <div class="next" onclick="plusSlides(1)">></div>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		<!--<img src="Mandelbrot1.png" style="float: left; left:5%; width: 80%;"/>-->
 	</div>	
+	
+	<!--Seperator-->
+	<div style="position: relative; height:110px; float:left; width:100%;"></div>
+	<div style="background-color: #eee; position: relative; height:1px; float:left; width:100%;"></div>
+	<div style="position: relative; height:20px; float:left; width:100%;"></div>
 </html>
+
+<script type="text/javascript" src="slideshow.js"></script>

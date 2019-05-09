@@ -39,7 +39,6 @@ html, body {
 
 /* Style the links inside the navigation bar */
 .TopBar a{
-  color: #f3f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -113,10 +112,9 @@ html, body {
 
 .Project img {
 	position: relative;
-	float: right;
-	width: 35%;
-	transform: translate(5%, 20%);
-	border: solid black 2px;
+	top: 30px;
+	border: solid #ddd 1px;
 	display: block;
 	z-index: 0;
+	margin: 10px;
 }

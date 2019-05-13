@@ -7,9 +7,11 @@
 	<div class="TopBar">
 	  <h1 class="Name">Mark Seufert</h1>
 	  <a href="#Projects">Side Projects</a>
+	  <div>-</div>
 	  <a href="https://github.com/MarkSeufert">Github</a>
+	  <div>-</div>
 	  <a href="Resume.pdf">Resume</a>
-	  <a href="index_meme.html">Who am I</a>
+	  <!--<a href="index_meme.html">Who am I</a>-->
 	</div>
 		
 	<!--<embed src="Resume.pdf" type="application/pdf" width="100%" height="600px" />-->
@@ -29,12 +31,13 @@
 	<div class="Project">
 		<h2>Tribreak</h2> 
 		<h3>April 2019</h3>
-		<img src="TribreakGif.gif" style="float: right; width: 30%;"/>
+		<img src="Images\TribreakGif.gif" style="float: right; width: 30%;"/>
 		<h5>A game I've been working on and off of for the past 2 years. I finally decided to rip off the bandaid and finish the damn thing,
-		and this is the result. The game is a completely original concept, I didn't follow any stupid youtube tutorial series to make it.
-		The game requires you to beat levels by stragically destroying all the triangles in a way that lets you land on other triangles.
-		I designed all the textures, sounds, gameplay, code, and marketing by myself, which is kinda dope. I released it on android for free,
-		so if you have an android phone you can download and play it! (you better give 5 stars)</h5>
+		and this is the result.
+		This game requires you to beat levels by strategically destroying all the triangles in a way that lets you land on other triangles.
+		I designed all the textures, sounds, gameplay, code, and marketing by myself, which is kinda cool. I released it on android for free,
+		so if you have an android phone you can download and play it! (you better give 5 stars) I wrote it in c&#9839 using Unity3d, because
+		unity is dope.</h5>
 		
 		<h4>Links: </h4>
 		<a href="https://play.google.com/store/apps/details?id=com.MWAS.TribreakV2">Google Play</a>
@@ -51,7 +54,7 @@
 		<h3>November 2018</h3>
 		<h5>It's cool to see the complexity in simplicity. The Mandelbrot set is the repeated application of a simple recursive function across many points,
 		which can create some deceptively complex results. I originally created this project in c++ using the BGI graphics interface, but that 
-		library turned out to be a slow piece of trash. Recently, I decided to port it into OpenGL using GLFW, which made it a lot faster and more detailed.
+		library turned out to be embarrassingly slow. Recently, I decided to port it into OpenGL using GLFW, which made it a lot faster and more accurate.
 		</h5>
 		
 		<h4>Links: </h4>
@@ -67,15 +70,15 @@
 
 		  <!-- Full-width images with number and caption text -->
 		  <div class="mySlides fade">
-			<img src="Mandelbrot3.png" style="width:100%">
+			<img src="Images\Mandelbrot3.png" style="width:100%">
 		  </div>
 
 		  <div class="mySlides fade">
-			<img src="Mandelbrot1.png" style="width:100%">
+			<img src="Images\Mandelbrot1.png" style="width:100%">
 		  </div>
 
 		  <div class="mySlides fade">
-			<img src="Mandelbrot2.png" style="width:100%">	
+			<img src="Images\Mandelbrot2.png" style="width:100%">	
 		  </div>
 
 		  <!-- Next and previous buttons -->
@@ -102,23 +105,25 @@
 	<div class="Project">
 		<h2>Game of Life</h2> 
 		<h3>June 2018</h3>
-		<h5>Is the universe a simulation? After programming this project and seeing how easy it is to create lifelike results, I don't even know anymore. 
+		<h5>Is the universe a simulation? After programming this project and seeing how easy it is to produce lifelike behavior, I don't even know anymore. 
 		The Game of Life is a simple cellular life simulation, where each cell either lives onto the next generation or dies, depending 
 		on a few simple rules. The results kinda look like cells fighting for life which I think is kinda neat, and you can play god and wipe them
-		all out if you want. This application was made in c++ using OpenGL. 
+		all out if you want. I wrote this application in c++ using OpenGL. 
 		</h5>
 		 
 		<h4>Links: </h4>
 		<a href="https://github.com/MarkSeufert/GameOfLife">Github</a>
+		<h6>-</h6>
+		<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a>
 		<h6>-</h6>
 		<a href="https://www.youtube.com/watch?v=xP5-iIeKXE8">Youtube</a>
 		
 		<!--Seperator-->
 		<div style="position: relative; height:0px; float:left; width:100%;"></div>
 		
-		<img src="GameOfLife2.gif" style="float: left; width: 30%;"/>
-		<img src="GameOfLife.gif" style="float: left; width: 30%;"/>
-		<img src="GameOfLife3.gif" style="float: left; width: 30%;"/>
+		<img src="Images\GameOfLife2.gif" style="float: left; width: 30%;"/>
+		<img src="Images\GameOfLife.gif" style="float: left; width: 30%;"/>
+		<img src="Images\GameOfLife3.gif" style="float: left; width: 30%;"/>
 	
 	</div>
 	
@@ -131,7 +136,7 @@
 	<div class="Project">
 		<h2>Spherical Navigation</h2> 
 		<h3>October 2017</h3>
-		<img src="SphericalNavigation.png" style="float: right; width: 40%;"/>
+		<img src="Images\SphericalNavigation.png" style="float: right; width: 40%;"/>
 		<h5>Back in grade 7, I took a trip to Germany with my scout group. On the flight between Toronto and Frankfurt, I remember seeing Greenland
 			and thinking "why is the plane flying past Greenland, Germany isn't that far north!". Well silly old me didn't understand how flight
 			trajectories worked. This application graphically displays the shortest distance between two user-selected points on the earth. 
@@ -146,6 +151,65 @@
 	<div style="position: relative; height:110px; float:left; width:100%;"></div>
 	<div style="background-color: #eee; position: relative; height:1px; float:left; width:100%;"></div>
 	<div style="position: relative; height:20px; float:left; width:100%;"></div>
+	
+	<!-- Rotating Solids -->
+	<div class="Project">
+		<h2>Rotating Shapes</h2> 
+		<h3>June 2016</h3>
+		<h5>In the summer after high school ended, I had tons of free time. This project was one of the outlets of my boredom. 
+		I wrote this project in c++ using the BGI graphics interface, a very simple library which could only do 2d graphics. 
+		Because of this, I had to figure out how to do all the juicy 3d stuff myself, like how to rotate shapes and give things perspective. 
+		My computer unfortunately broke (I dropped it) before I could backup the code, so
+		I only have the executable available.
+		</h5>
+		 
+		<h4>Links: </h4>
+		<a href="https://drive.google.com/file/d/0B2W7MsGxcBqTZUgxSGFoNzJYZzg/view?usp=sharing">Executable</a>
+		
+		<!--Seperator-->
+		<div style="position: relative; height:0px; float:left; width:100%;"></div>
+		
+		<!-- Slideshow container -->
+		<div class="slideshow-container2">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides2 fade2">
+			<img src="Images\shape0.gif" style="width:100%">
+		  </div>
+
+		  <div class="mySlides2 fade2">
+			<img src="Images\shape1.gif" style="width:100%">
+		  </div>
+
+		  <div class="mySlides2 fade2">
+			<img src="Images\shape2.gif" style="width:100%">	
+		  </div>
+		  
+		  <div class="mySlides2 fade2">
+			<img src="Images\shape3.gif" style="width:100%">	
+		  </div>
+		  
+		  <div class="mySlides2 fade2">
+			<img src="Images\shape4.gif" style="width:100%">	
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <div class="prev2" onclick="plusSlides2(-1)"><</div>
+		  <div class="next2" onclick="plusSlides2(1)">></div>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+		  <span class="dot2" onclick="currentSlide2(1)"></span> 
+		  <span class="dot2" onclick="currentSlide2(2)"></span> 
+		  <span class="dot2" onclick="currentSlide2(3)"></span> 
+		  <span class="dot2" onclick="currentSlide2(4)"></span> 
+		  <span class="dot2" onclick="currentSlide2(5)"></span> 
+		</div>
+	
+	</div>
 </html>
 
 <script type="text/javascript" src="slideshow.js"></script>
+<script type="text/javascript" src="slideshow2.js"></script>

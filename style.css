@@ -7,17 +7,17 @@ html, body {
 /* Define the font we use */
 @font-face{
 	font-family: SlimFont;
-	src: url("Quicksand-Light.otf");
+	src: url("Fonts/Quicksand-Light.otf");
 }
 
 @font-face{
 	font-family: RegularFont;
-	src: url("Quicksand-Regular.otf");
+	src: url("Fonts/Quicksand-Regular.otf");
 }
 
 @font-face{
 	font-family: BoldFont;
-	src: url("Quicksand-Bold.otf");
+	src: url("Fonts/Quicksand-Bold.otf");
 }
 
 .TopBar {
@@ -50,6 +50,15 @@ html, body {
 /* Change the color of links on hover */
 .TopBar a:hover {
   text-decoration: underline;	
+}
+
+.TopBar div 
+{
+  text-align: center;
+  font-family: SlimFont;
+  font-size: 27px;
+  color: black;
+  display: inline;
 }
 
 .Project {
@@ -213,6 +222,104 @@ html, body {
 }
 
 @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Slideshow container 2*/
+
+* {box-sizing:border-box}
+
+.slideshow-container2 {
+  max-width: 70%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides2 {
+	
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 0px;
+  padding: 0px;
+  color: black;
+  font-family: RegularFont;
+  font-size: 45px;
+  transition: 0.3s ease;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: -60px;
+}
+
+.prev2 {
+  left: -45px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover, .next2:hover {
+  transform: scale(1.2);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 7px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot2:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade2 {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade2 {
   from {opacity: .4} 
   to {opacity: 1}
 }

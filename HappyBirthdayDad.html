@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+	
+</head>
+
+<html>
+	<canvas id="gameCanvas" width="1200" height="700"></canvas>
+	<div class="slidecontainer" style="position: absolute; top: 0px; right: 0px; width:100%;">
+		<label style="position: absolute; right: 50px; top: 20px; font-size: 22px">Simulation Speed</label>
+		<input style="position: absolute; right: 50px; top: 50px; width: 200px" type="range" min="3" max="10" value="5" class="slider" id="speedSlider">
+		<button style="position: absolute; right: 50px; top: 320px; width: 200px" onclick="reinitialize();">Reset</button>
+		<label style="position: absolute; right: 50px; top: 90px; font-size: 22px">Algorithm</label>
+		<select style="position: absolute; right: 50px; top: 120px; width: 200px" id="pathtype" onchange="reinitialize();">
+			<option value"v1"="">a*</option>
+			<option value"v2"="">Breadth First</option>
+		</select>
+		<label style="position: absolute; right: 50px; top: 170px; font-size: 22px">Start Position</label>
+		<label style="position: absolute; right: 180px; top: 200px; font-size: 18px">x:</label>
+		<input style="position: absolute; right: 140px; top: 200px; width: 35px" type="number" id="xStart" value="2">
+		<label style="position: absolute; right: 110px; top: 200px; font-size: 18px">y:</label>
+		<input style="position: absolute; right: 70px; top: 200px; width: 35px" type="number" id="yStart" value="2">
+		
+		<label style="position: absolute; right: 50px; top: 240px; font-size: 22px">End Position</label>
+		<label style="position: absolute; right: 180px; top: 270px; font-size: 18px">x:</label>
+		<input style="position: absolute; right: 140px; top: 270px; width: 35px" type="number" id="xEnd" value="96">
+		<label style="position: absolute; right: 110px; top: 270px; font-size: 18px">y:</label>
+		<input style="position: absolute; right: 70px; top: 270px; width: 35px" type="number" id="yEnd" value="56">
+		
+		<label style="position: absolute; right: 50px; top: 500px; font-size: 18px" id="position"></label>
+	</div>
+	<script src="pathfinding.js" type="text/javascript" async=""></script>
+</html>
